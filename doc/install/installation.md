@@ -109,6 +109,8 @@ You can use either MySQL or PostgreSQL.
 ## 6. Setup application
 
     # Edit application settings
+    # 防止于gitlab端口冲突修改8080为8888
+    
     sudo -u gitlab_ci -H cp config/application.yml.example config/application.yml
     sudo -u gitlab_ci -H editor config/application.yml
 
